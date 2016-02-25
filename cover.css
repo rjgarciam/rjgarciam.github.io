@@ -26,8 +26,10 @@ a:hover {
 
 html,
 body {
-  height: 100%;
-  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), #2F557F  url("bg.jpg") no-repeat center center;
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), #2F557F  url("bg.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -36,6 +38,12 @@ body {
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+}
+@media screen and (min-width: 768px),(min-height: 580px){
+  html,
+  body {
+    height: 100%
+  }
 }
 
 .cover-heading{
